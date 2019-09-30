@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>INDEX</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="actual">Inicio</a> <a href="chartjs-line.html">Performances Realizadas</a> <a href="chartjs-bar.html">Objetos Teatrales</a> <a href="chartjs-radar.html">Comparación de Colectivos</a> <a href="c3js-line.html">Edades</a> <a href="d3plus-treemap.html">Público Asistente</a>
+    </nav>
+
+    <div id="home">
+        <p><span id="saluda"></span> Somos Sofía Fonseca y Claudia González. En este sitio web podrás ver datos sobre Performances Feministas en Chile. </p>
+        <h3>El estudio consiste en la observación y el análisis de performances que se dan bajo un contexto feminista en Chile. Éstas surgieron el año 2016, con el inicio de la Cuarta Ola Feminista. Se observarán los objetos de diseño teatral como el vestuario, maquillaje y peinado, material complementario y carteles, que son utilizados en estas performances, además de sus espacios y contextos sociales en los cuales son realizadas.</h3>
+    </div>
+    <script>
+        var saludos = ["Hola", "Hi", "Hallo", "Ciao"];
+        var cromas = ["#ff8a80", "#ea80fc", "#8c9eff", "#80d8ff"]
+
+        function setup() {
+            noCanvas();
+            createElement('strong', random(saludos) + '!').parent('saluda').style('color', random(cromas));
+        }
+    </script>
+
+</body>
+
+</html>
